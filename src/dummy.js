@@ -1,27 +1,28 @@
+const ServerConfig = require('./config/ServerConfig');
 exports.devices = [
     {
         id: '1',
         sensor: '1234567890',
         soundClip: '1234567890-normal.wav',
-        urlSoundClip: 'http://localhost:9000/storage/1234567890-normal.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/1234567890-normal.wav',
     },
     {
         id: '2',
         sensor: '0123456789',
         soundClip: '0123456789-normal.wav',
-        urlSoundClip: 'http://localhost:9000/storage/0123456789-normal.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/0123456789-normal.wav',
     },
     {
         id: '3',
         sensor: '1122334455',
         soundClip: '1122334455-normal.wav',
-        urlSoundClip: 'http://localhost:9000/storage/1122334455-normal.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/1122334455-normal.wav',
     },
     {
         id: '4',
         sensor: '2345678900',
         soundClip: '2345678900-normal.wav',
-        urlSoundClip: 'http://localhost:9000/storage/2345678900-normal.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/2345678900-normal.wav',
     },
 ]
 
@@ -33,7 +34,7 @@ exports.deviceEvents = [
         anomaly: 'Mild',
         sensor: '1234567890',
         soundClip: '1.wav',
-        urlSoundClip: 'http://localhost:9000/storage/1.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/1.wav',
     },
     {
         id: '2',
@@ -42,7 +43,7 @@ exports.deviceEvents = [
         anomaly: 'Moderate',
         sensor: '0123456789',
         soundClip: '2.wav',
-        urlSoundClip: 'http://localhost:9000/storage/2.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/2.wav',
     },
     {
         id: '3',
@@ -51,7 +52,7 @@ exports.deviceEvents = [
         anomaly: 'Severe',
         sensor: '1234567890',
         soundClip: '3.wav',
-        urlSoundClip: 'http://localhost:9000/storage/3.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/3.wav',
     },
     {
         id: '4',
@@ -60,7 +61,7 @@ exports.deviceEvents = [
         anomaly: 'Mild',
         sensor: '1122334455',
         soundClip: '4.wav',
-        urlSoundClip: 'http://localhost:9000/storage/4.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/4.wav',
     },
     {
         id: '5',
@@ -69,7 +70,7 @@ exports.deviceEvents = [
         anomaly: 'Moderate',
         sensor: '2345678900',
         soundClip: '5.wav',
-        urlSoundClip: 'http://localhost:9000/storage/5.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/5.wav',
     },
     {
         id: '6',
@@ -78,7 +79,7 @@ exports.deviceEvents = [
         anomaly: 'Severe',
         sensor: '2345678900',
         soundClip: '6.wav',
-        urlSoundClip: 'http://localhost:9000/storage/6.wav',
+        urlSoundClip: ServerConfig.SERVER_URL+'/storage/6.wav',
     }
 ];
 
